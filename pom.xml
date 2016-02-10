@@ -69,8 +69,8 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.19.1</version>
                 <configuration>
-                	<parallel>methods</parallel>
-          			<threadCount>30</threadCount>
+                	<parallel>classes</parallel>
+          			<threadCount>10</threadCount>
                     <redirectTestOutputToFile>false</redirectTestOutputToFile>
                     <systemPropertyVariables>
                         <appPath>${project.basedir}/resources/GuineaPigApp-debug.apk</appPath>
